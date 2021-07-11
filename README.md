@@ -12,7 +12,7 @@ This project is a demonstration of the capability of deep learning techniques in
    ```
 2. Cloning the repository:-
    ```bash
-   git clone https://github.com/archihalder/Hand-Wriiten-digit-classifier.git
+   git clone https://github.com/theAdarshSrivastava/Hand-Wriiten-digit-classifier.git
    ```
 3. Run the web app:-
    ```bash
