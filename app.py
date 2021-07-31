@@ -8,8 +8,6 @@ from streamlit_drawable_canvas import st_canvas
 from tensorflow import keras
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import load_img
-import requests
-from io import BytesIO
 
 
 
@@ -36,8 +34,8 @@ html_temp = """
 
 st.markdown(html_temp, unsafe_allow_html=True)
 
-opt = st.selectbox("How do you want to upload the image for classification?\n",
-                  ( "Upload image from device","Draw the Digit!"),)
+opt = st.selectbox("How do you want to upload the image for recognition?\n",
+                  ( "Please Choose", "Upload image from device","Draw the Digit!"),)
 
 
 if opt == "Upload image from device":
@@ -56,25 +54,27 @@ elif opt == 'Draw the Digit!':
                )
     realtime_update = st.sidebar.checkbox("Update in realtime", True)
 
-    imag = st_canvas(
+    canvas_result = st_canvas(
     stroke_width=stroke_width,
-    stroke_color=stroke_color,
-    background_color=bg_color,
+    stroke_color="#000",
+    background_color="#eee",
     update_streamlit=realtime_update,
-    height=300,
+    height=200,
     width=300,
     drawing_mode=drawing_mode,
     key="canvas",
     )
-    cv.imwrite("test.jpg",imag)
-    image = Image.open("test.jpg")
-    
+    try:
+        cv.imwrite("test.jpg",canvas_result.image_data)
+        image=Image.open("test.jpg")
+    except:
+        pass
 try:
     if image is not None:
         st.image(image, width = 300, caption = 'Uploaded Image')
         if st.button('Predict'):
-            model = keras.models.load_model('/home/adarshsrivastava/Github/Hand-Wriiten-digit-classifier/Model/model.h5')
-            image = np.array(image.resize((28, 28), Image.ANTIALIAS))
+            model = keras.models.load_model('/home/adarshsrivastava/Github/Hand-Wriiten-digit-classifier/Model/Model.h5')
+            image = np.array(image.resize((28,28), Image.ANTIALIAS))
             image = np.array(image, dtype='uint8' )
             image = image[:,:,0]
             image = np.invert(np.array([image]))
