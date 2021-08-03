@@ -10,9 +10,6 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import load_img
 
 
-
-# @st.cache(allow_output_mutation=True, suppress_st_warning=True)
-
 html_temp = """
     <body>
     <div style ="padding-bottom: 20px; 
@@ -74,10 +71,9 @@ try:
         st.image(image, width = 300, caption = 'Uploaded Image')
         if st.button('Predict'):
             model = keras.models.load_model('/home/adarshsrivastava/Github/Hand-Wriiten-digit-classifier/Model/Model.h5')
-            image = np.array(image.resize((28,28), Image.ANTIALIAS))
-            image = np.array(image, dtype='uint8' )
-            image = image[:,:,0]
-            image = np.invert(np.array([image]))
+            ""
+            
+            ""
             prediction = model.predict(image)
             st.success('Hey! The uploaded digit has been predicted as {}'.format(np.argmax(prediction)))
 
