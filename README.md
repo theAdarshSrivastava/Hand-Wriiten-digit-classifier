@@ -21,3 +21,7 @@ This project is a demonstration of the capability of deep learning techniques in
 4. To close the app from the terminal, press Ctrl+C.
 
 ---
+## Model Architecture
+<img src = "assets/model_architecture.png" height = 600px width = 400px>
+
+The model in .h5 format may be downloaded from <a href = "https://drive.google.com/file/d/161FyMUewCUbKtiBaMTc87oGY7qtPRMYp/view?usp=sharing">here</a>.
