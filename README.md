@@ -1,6 +1,6 @@
 <h1 align="center"> Hand Written Digit Classifier </h1>
 
-This project is a demonstration of the capability of deep learning techniques in object recognition in image data. It is a handwritten digit recognition model using the MNIST dataset.
+This project is a demonstration of the capability of deep learning techniques in object recognition in image data. It is a handwritten digit recognition model using the MNIST dataset.The handwritten digit recognition is the ability of computers to recognize human handwritten digits. It is a hard task for the machine because handwritten digits are not perfect and can be made with many different variations. The handwritten digit recognition is the solution to this problem which uses the image of a digit and recognizes the digit present in the image.
 
 ---
 
