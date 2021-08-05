@@ -4,6 +4,14 @@ This project is a demonstration of the capability of deep learning techniques in
 
 ---
 
+## Model Architecture
+
+<img src = "assets/model_architecture.png" height = 800px width = 600px>
+
+The model in .h5 format may be downloaded from <a href = "https://drive.google.com/file/d/1iwutxvsbuw48MObnk9wYPhLWUS1Vk9YJ/view?usp=sharing">here</a>.
+
+---
+
 <h2>How to use the web app</h2>
 
 1. Installing the required softwares:-
@@ -21,7 +29,7 @@ This project is a demonstration of the capability of deep learning techniques in
 4. To close the app from the terminal, press Ctrl+C.
 
 ---
-## Model Architecture
-<img src = "assets/model_architecture.png" height = 800px width = 600px>
 
-The model in .h5 format may be downloaded from <a href = "https://drive.google.com/file/d/1iwutxvsbuw48MObnk9wYPhLWUS1Vk9YJ/view?usp=sharing">here</a>.
+<h2>Demo</h2>
+
+![](Demo/demo.gif)
