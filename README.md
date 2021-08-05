@@ -22,6 +22,6 @@ This project is a demonstration of the capability of deep learning techniques in
 
 ---
 ## Model Architecture
-<img src = "assets/model_architecture.png" height = 600px width = 400px>
+<img src = "assets/model_architecture.png" height = 800px width = 600px>
 
-The model in .h5 format may be downloaded from <a href = "https://drive.google.com/file/d/161FyMUewCUbKtiBaMTc87oGY7qtPRMYp/view?usp=sharing">here</a>.
+The model in .h5 format may be downloaded from <a href = "https://drive.google.com/file/d/1iwutxvsbuw48MObnk9wYPhLWUS1Vk9YJ/view?usp=sharing">here</a>.
