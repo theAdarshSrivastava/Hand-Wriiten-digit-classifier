@@ -78,7 +78,7 @@ try:
     if image is not None:
         st.image(image, width = 300, caption = 'Uploaded Image')
         if st.button('Predict'):
-            model = keras.models.load_model('/home/adarshsrivastava/Github/Hand-Wriiten-digit-classifier/Model/model.h5')
+            model = keras.models.load_model('Model/model.h5')
             im=cv.imread("test.jpg")
             im=cv.cvtColor(im,cv.COLOR_BGR2GRAY)
             im=cv.resize(im,(28,28))
