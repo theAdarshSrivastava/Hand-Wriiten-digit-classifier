@@ -34,6 +34,7 @@ The model in .h5 format may be downloaded from <a href = "https://drive.google.c
 
 ![](Demo/demo.gif)
 
+# Contributors
 
 ![Archi Halder](https://github.com/theAdarshSrivastava)
 ![Adarsh Srivastava](https://github.com/theAdarshSrivastava)
